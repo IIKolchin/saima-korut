@@ -13,6 +13,8 @@ import { Link } from 'react-router-dom';
 import Slider from '../../components/slider/slider';
 import ImageComponent from '../../components/image-component/image-component';
 import Footer from '../../components/footer/footer';
+import VideoComponent from '../../components/video-component/video-component';
+import video from '../../assets/videos/video1.mp4';
 
 const MainPage = () => {
   return (
@@ -20,7 +22,8 @@ const MainPage = () => {
       <Header />
       <section className={styles.intro}>
         <div className={styles.intro_group}>
-          <img className={styles.intro_img} src={pictureIntro} alt="" />
+          {/* <img className={styles.intro_img} src={pictureIntro} alt="" /> */}
+          <VideoComponent src={video} loop muted={true} autoplay={true} width="573px" height="322px" />
           <img src={logo} alt="" />
         </div>
 
@@ -41,7 +44,7 @@ const MainPage = () => {
             </Link>
           </li>
           <li className={styles.series_episode}>
-            <p>PYöRRE B</p>
+            <p>PYÖRRE B</p>
             <Link to="">
               <img className={styles.arrowRright} src={arrowRight} alt="" />
             </Link>
@@ -59,7 +62,7 @@ const MainPage = () => {
         <Slider />
       </section>
       <section className={styles.images}>
-        <div>
+        <div className={styles.images_group}>
           <ImageComponent src={image2} alt="Image 2" delay={0} />
           <ImageComponent src={image1} alt="Image 1" delay={500} />
           <ImageComponent src={image3} alt="Image 3" delay={1000} />
