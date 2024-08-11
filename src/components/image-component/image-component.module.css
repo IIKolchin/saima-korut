@@ -1,0 +1,27 @@
+.image {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    width: 335px;
+    height: 504px;
+  }
+  
+  .visible {
+    opacity: 1;
+  }
+  
+  .image:nth-child(2) {
+    left: 40%; 
+    top: 40%;
+    width: 516px;
+    height: 446px;
+  }
+  
+  .image:nth-child(3) {
+    left: 50%;
+    top: 60%; 
+    width: 508px;
+    height: 236px;
+  }

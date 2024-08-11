@@ -1,17 +1,17 @@
 .section {
-    background-color: rgb(245, 245, 245);
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 48px;
-color: rgb(63, 63, 63);
-font-family: Roboto;
-font-size: 22px;
-font-weight: 400;
-line-height: 120%;
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px;
+  color: rgb(63, 63, 63);
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 120%;
 }
 
 .img {
-    width: 42px;
-    height: 43px;
+  width: 42px;
+  height: 43px;
 }
