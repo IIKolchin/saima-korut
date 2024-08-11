@@ -1,6 +1,6 @@
 import Header from '../../components/header/Header';
 import styles from './MainPage.module.css';
-import pictureIntro from '../../assets/images/photo1.png';
+// import pictureIntro from '../../assets/images/photo1.png';
 import arrowRight from '../../assets/images/arrowRight.svg';
 import logo from '../../assets/images/logo.svg';
 import image1 from '../../assets/images/image1.png';
