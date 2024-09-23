@@ -1,6 +1,6 @@
 import Header from '../../components/header/Header';
 import styles from './MainPage.module.css';
-// import pictureIntro from '../../assets/images/photo1.png';
+import pictureIntro from '../../assets/images/photo1.png';
 import arrowRight from '../../assets/images/arrowRight.svg';
 import logo from '../../assets/images/logo.svg';
 import image1 from '../../assets/images/image1.png';
@@ -23,7 +23,14 @@ const MainPage = () => {
       <section className={styles.intro}>
         <div className={styles.intro_group}>
           {/* <img className={styles.intro_img} src={pictureIntro} alt="" /> */}
-          <VideoComponent src={video} loop muted={true} autoplay={true} width="573px" height="322px" />
+          <VideoComponent
+            src={video}
+            loop
+            muted={true}
+            autoplay={true}
+            width="700px"
+            height="500px"
+          />
           <img src={logo} alt="" />
         </div>
 
@@ -39,21 +46,21 @@ const MainPage = () => {
         <ul className={styles.series_group}>
           <li className={styles.series_episode}>
             <p>AALLOT A</p>
-            <Link to="">
+            <a href="">
               <img className={styles.arrowRright} src={arrowRight} alt="" />
-            </Link>
+            </a>
           </li>
           <li className={styles.series_episode}>
             <p>PYÖRRE B</p>
-            <Link to="">
+            <a href="">
               <img className={styles.arrowRright} src={arrowRight} alt="" />
-            </Link>
+            </a>
           </li>
           <li className={styles.series_episode}>
             <p>RAILOT C</p>
-            <Link to="">
+            <a href="">
               <img className={styles.arrowRright} src={arrowRight} alt="" />
-            </Link>
+            </a>
           </li>
         </ul>
         <img className={styles.img_series} src={pictureSeries} alt="" />
@@ -102,7 +109,7 @@ const MainPage = () => {
           </p>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
