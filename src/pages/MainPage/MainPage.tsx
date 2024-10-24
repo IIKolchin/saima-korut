@@ -19,7 +19,7 @@ import video from '../../assets/videos/video1.mp4';
 const MainPage = () => {
   return (
     <div className={styles.main}>
-      <Header />
+      <Header mainPage />
       <section className={styles.intro}>
         <div className={styles.intro_group}>
           {/* <img className={styles.intro_img} src={pictureIntro} alt="" /> */}

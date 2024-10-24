@@ -25,6 +25,12 @@ const Slider: React.FC = () => {
       setShowPrev(swiper.activeIndex > 0);
     }
   };
+  const handleNext = () => {
+    if (swiperRef.current) {
+      const swiper = swiperRef.current.swiper;
+      swiper.slideNext(); // Переключение на следующий слайд
+    }
+  };
 
   useEffect(() => {
     if (swiperRef.current) {
@@ -41,10 +47,10 @@ const Slider: React.FC = () => {
         spaceBetween={50}
         slidesPerView={3}
         ref={swiperRef}
-        navigation={{
-          prevEl: prevRef.current,
-          nextEl: nextRef.current,
-        }}
+        // navigation={{
+        //   prevEl: prevRef.current,
+        //   nextEl: nextRef.current,
+        // }}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
         onSwiper={(swiper: SwiperClass) => console.log(swiper)}
@@ -103,7 +109,11 @@ const Slider: React.FC = () => {
           <img className={styles.buttonNext} src={arrowLeft} alt="" />
         </div>
       </Swiper>
-      <div ref={nextRef} className={styles.customSwiperButtonNext}>
+      <div
+        ref={nextRef}
+        onClick={handleNext}
+        className={styles.customSwiperButtonNext}
+      >
         <img className={styles.buttonNext} src={arrowRight} alt="" />
       </div>
     </div>

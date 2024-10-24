@@ -18,17 +18,22 @@ const BrandHistory = () => {
           <img className={styles.img2} src={about2} alt="" />
           <img className={styles.img3} src={about3} alt="" />
         </div>
-        <p className={styles.text}>
-          Suomalaisen Taituruuden Perintö: Matti Suninen, Jalokivien Maestro!
-          Matti Suninen, suomalainen jalokivitaiteilija ja kellojen taituri,
-          kantaa sydämessään rikasta tarinaa ja perinnettä, joka on solminut
-          hänet suomalaisen taidetuotannon ytimeen. Hän ei ole pelkästään
-          koruntekijä, vaan elävä perintö, joka on omistanut elämänsä sukunsa
-          perinteen jatkamiselle. Tämä pieteetillä valmistettujen korujen
-          mestari ei ole vain taiteilija, vaan myös kunnioitettu kansalainen ja
-          isänmaanystävä. Hänen teoksensa huokuvat rakkautta Suomea ja sen
-          kulttuuria kohtaan.
-        </p>
+        <div className={styles.text}>
+          <p>Suomalaisen Taituruuden Perintö: Matti Suninen,</p>
+          <p>Jalokivien Maestro!</p>
+          <p>
+            Matti Suninen, suomalainen jalokivitaiteilija ja kellojen taituri,
+            kantaa sydämessään rikasta tarinaa ja perinnettä, joka on solminut
+            hänet suomalaisen taidetuotannon ytimeen. Hän ei ole pelkästään
+            koruntekijä, vaan elävä perintö, joka on omistanut elämänsä sukunsa
+            perinteen jatkamiselle.{' '}
+          </p>
+          <p>
+            Tämä pieteetillä valmistettujen korujen mestari ei ole vain
+            taiteilija, vaan myös kunnioitettu kansalainen ja isänmaanystävä.
+            Hänen teoksensa huokuvat rakkautta Suomea ja sen kulttuuria kohtaan.
+          </p>
+        </div>
         <img src={about4} alt="" />
         <div className={styles.img_group}>
           <img className={styles.img5} src={about5} alt="" />
