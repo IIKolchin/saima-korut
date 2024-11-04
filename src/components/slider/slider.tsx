@@ -28,7 +28,7 @@ const Slider: React.FC = () => {
   const handleNext = () => {
     if (swiperRef.current) {
       const swiper = swiperRef.current.swiper;
-      swiper.slideNext(); // Переключение на следующий слайд
+      swiper.slideNext(); 
     }
   };
 
@@ -47,10 +47,6 @@ const Slider: React.FC = () => {
         spaceBetween={50}
         slidesPerView={3}
         ref={swiperRef}
-        // navigation={{
-        //   prevEl: prevRef.current,
-        //   nextEl: nextRef.current,
-        // }}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
         onSwiper={(swiper: SwiperClass) => console.log(swiper)}

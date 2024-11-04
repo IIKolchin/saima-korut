@@ -1,0 +1,17 @@
+.section {
+  padding: 20px;
+}
+
+.heading {
+  margin-left: 117px;
+  margin-bottom: 30px;
+  color: rgb(63, 63, 63);
+  font-family: 'Roboto';
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 120%;
+}
+.group {
+  display: flex;
+  gap: 20px;
+}
