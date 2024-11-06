@@ -15,6 +15,7 @@ import ImageComponent from '../../components/image-component/image-component';
 import Footer from '../../components/footer/footer';
 import VideoComponent from '../../components/video-component/video-component';
 import video from '../../assets/videos/video1.mp4';
+import { NavLink } from 'react-router-dom';
 
 const MainPage = () => {
   return (
@@ -39,7 +40,9 @@ const MainPage = () => {
             Saimaa Korujen syntyyn. Saimaa Korut valmistetaan 925 hopeasta
             Suomessa.
           </p>
-          <button className={styles.intro_button}>kokoelma</button>
+          <NavLink to="/korusarjat">
+            <button className={styles.intro_button}>kokoelma</button>
+          </NavLink>
         </div>
       </section>
       <section className={styles.series}>
@@ -82,18 +85,22 @@ const MainPage = () => {
           koruihinsa, jotka on luotu rakkaudella Suomen luontoon ja jotka
           ilahduttavat sinua milloin tahansa
         </p>
-        <button className={styles.intro_button}>KORUSARJAT</button>
+        <NavLink to="/korusarjat">
+          <button className={styles.intro_button}>KORUSARJAT</button>
+        </NavLink>
       </section>
       <section className={styles.collection}>
         <div className={styles.collection_groups}>
           <div className={styles.collection_group}>
-            <button className={styles.collection_button}>
-              <img
-                className={styles.collection_button_img}
-                src={arrowRight}
-                alt=""
-              />
-            </button>
+            <NavLink to="/korusarjat">
+              <button className={styles.collection_button}>
+                <img
+                  className={styles.collection_button_img}
+                  src={arrowRight}
+                  alt=""
+                />
+              </button>
+            </NavLink>
             <p className={styles.collection_button_text}>
               Perinteet ruumiillistuvat kauniissa, moderneissa koruissa, jotka
               kirkastavat suomalaista luontoa

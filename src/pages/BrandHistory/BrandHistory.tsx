@@ -7,6 +7,7 @@ import about3 from '../../assets/images/about3.png';
 import about4 from '../../assets/images/about4.png';
 import about5 from '../../assets/images/about5.png';
 import about6 from '../../assets/images/about6.png';
+import { NavLink } from 'react-router-dom';
 
 const BrandHistory = () => {
   return (
@@ -40,7 +41,11 @@ const BrandHistory = () => {
           <img src={about6} alt="" />
         </div>
         <div className={styles.series}>
-          <button className={styles.button}>KORUSARJAT</button>
+          <div className={styles.link}>
+          <NavLink to="/korusarjat">
+            <button className={styles.button}>KORUSARJAT</button>
+          </NavLink>
+          </div>
           <p className={styles.images_text}>
             Tervetuloa tutustumaan uuteen suomalaiseen käsityöläiseen ja hänen
             koruihinsa, jotka on luotu rakkaudella Suomen luontoon ja jotka
