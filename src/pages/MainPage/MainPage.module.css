@@ -41,6 +41,7 @@
   line-height: 120%;
   letter-spacing: 6%;
   text-align: center;
+  cursor: pointer;
 }
 
 .series {
@@ -59,6 +60,10 @@
   list-style-type: none;
   margin: 0;
   position: relative;
+}
+
+.series_episode {
+  cursor: pointer;
 }
 
 .series_episode:last-of-type {

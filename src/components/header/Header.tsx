@@ -4,12 +4,14 @@ import CustomSelectComponent from '../select/select';
 import Logo from '../../assets/images/logo_header.svg';
 import { NavLink } from 'react-router-dom';
 import { FC } from 'react';
+import { useTranslation } from 'react-i18next';
 
 type THeaderProps = {
   mainPage?: boolean;
 };
 
 const Header: FC<THeaderProps> = ({ mainPage }) => {
+  const { t } = useTranslation();
   return (
     <section className={styles.section}>
       {mainPage && <CustomSelectComponent />}
@@ -23,19 +25,19 @@ const Header: FC<THeaderProps> = ({ mainPage }) => {
         className={({ isActive }) => (isActive ? styles.active : styles.text)}
       >
         {' '}
-        Korusarjat
+        {t('Korusarjat')}
       </NavLink>
       <NavLink
         to="/yhteystiedot"
         className={({ isActive }) => (isActive ? styles.active : styles.text)}
       >
-        Yhteystiedot
+        {t('Yhteystiedot')}
       </NavLink>
       <NavLink
         to="/about"
         className={({ isActive }) => (isActive ? styles.active : styles.text)}
       >
-        Brändin historia
+        {t('Brändin historia')}
       </NavLink>
       <img className={styles.img} src={basket} alt="icon" />
     </section>

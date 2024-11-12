@@ -9,15 +9,17 @@ import image3 from '../../assets/images/image3.png';
 import collection from '../../assets/images/collection.png';
 import collection2 from '../../assets/images/collection2.png';
 import pictureSeries from '../../assets/images/unsplash_H-dhloI_bss.png';
-import { Link } from 'react-router-dom';
 import Slider from '../../components/slider/slider';
 import ImageComponent from '../../components/image-component/image-component';
 import Footer from '../../components/footer/footer';
 import VideoComponent from '../../components/video-component/video-component';
 import video from '../../assets/videos/video1.mp4';
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const MainPage = () => {
+  const { t } = useTranslation();
+
   return (
     <div className={styles.main}>
       <Header mainPage />

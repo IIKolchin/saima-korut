@@ -7,6 +7,7 @@ import {
   SelectChangeEvent,
 } from '@mui/material';
 import ArrrowIconImage from '../../assets/images/arrow.svg';
+import { useTranslation } from 'react-i18next';
 
 const CustomIcon = styled('img')({
   width: 19,
@@ -42,12 +43,18 @@ const CustomSelect = styled((props: SelectProps) => (
 const options = ['Suomi', 'Englanti'];
 
 const CustomSelectComponent: React.FC = () => {
+  const { i18n } = useTranslation();
   const [value, setValue] = React.useState<string>('Suomi');
-
   console.log(value);
+
+  const changeLanguage = (language: string) => {
+    i18n.changeLanguage(language);
+  };
 
   const handleChange = (event: SelectChangeEvent<unknown>) => {
     setValue(event.target.value as string);
+    changeLanguage(event.target.value as string);
+    localStorage.setItem('language', event.target.value as string);
   };
 
   return (

@@ -9,30 +9,78 @@ import korut4 from '../../assets/images/korut4.png';
 
 const Korusarjat = () => {
   return (
-    <section className={styles.section}>
+    <section>
       <Header />
-      <h2 className={styles.heading}>AALLOT A</h2>
-      <div className={styles.group}>
-        <ProductCard
-          img={korut1}
-          text={'Aallot korvakorut 306k'}
-          price={'69/44€'}
-        />
-        <ProductCard
-          img={korut2}
-          text={'Aallot korvakorut 306k'}
-          price={'69/44€'}
-        />
-        <ProductCard
-          img={korut3}
-          text={'Aallot korvakorut 306k'}
-          price={'69/44€'}
-        />
-        <ProductCard
-          img={korut4}
-          text={'Aallot korvakorut 306k'}
-          price={'69/44€'}
-        />
+      <div className={styles.section}>
+        <h2 className={styles.heading}>AALLOT A</h2>
+        <div className={styles.group}>
+          <ProductCard
+            img={korut1}
+            text={'Aallot korvakorut 306k'}
+            price={'69/44€'}
+          />
+          <ProductCard
+            img={korut2}
+            text={'Aallot korvakorut 306k'}
+            price={'69/44€'}
+          />
+          <ProductCard
+            img={korut3}
+            text={'Aallot korvakorut 306k'}
+            price={'69/44€'}
+          />
+          <ProductCard
+            img={korut4}
+            text={'Aallot korvakorut 306k'}
+            price={'69/44€'}
+          />
+        </div>
+        <h2 className={styles.heading}>AALLOT B</h2>
+        <div className={styles.group}>
+          <ProductCard
+            img={korut1}
+            text={'Aallot korvakorut 306k'}
+            price={'69/44€'}
+          />
+          <ProductCard
+            img={korut2}
+            text={'Aallot korvakorut 306k'}
+            price={'69/44€'}
+          />
+          <ProductCard
+            img={korut3}
+            text={'Aallot korvakorut 306k'}
+            price={'69/44€'}
+          />
+          <ProductCard
+            img={korut4}
+            text={'Aallot korvakorut 306k'}
+            price={'69/44€'}
+          />
+        </div>
+        <h2 className={styles.heading}>AALLOT C</h2>
+        <div className={styles.group}>
+          <ProductCard
+            img={korut1}
+            text={'Aallot korvakorut 306k'}
+            price={'69/44€'}
+          />
+          <ProductCard
+            img={korut2}
+            text={'Aallot korvakorut 306k'}
+            price={'69/44€'}
+          />
+          <ProductCard
+            img={korut3}
+            text={'Aallot korvakorut 306k'}
+            price={'69/44€'}
+          />
+          <ProductCard
+            img={korut4}
+            text={'Aallot korvakorut 306k'}
+            price={'69/44€'}
+          />
+        </div>
       </div>
       <Footer />
     </section>
