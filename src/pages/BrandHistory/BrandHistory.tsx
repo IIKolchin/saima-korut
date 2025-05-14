@@ -20,20 +20,22 @@ const BrandHistory = () => {
           <img className={styles.img3} src={about3} alt="" />
         </div>
         <div className={styles.text}>
-          <p>Suomalaisen Taituruuden Perintö: Matti Suninen,</p>
-          <p>Jalokivien Maestro!</p>
+          {/* <p>Suomalaisen Taituruuden Perintö: Matti Suninen,</p>
+          <p>Jalokivien Maestro!</p> */}
           <p>
-            Matti Suninen, suomalainen jalokivitaiteilija ja kellojen taituri,
-            kantaa sydämessään rikasta tarinaa ja perinnettä, joka on solminut
-            hänet suomalaisen taidetuotannon ytimeen. Hän ei ole pelkästään
-            koruntekijä, vaan elävä perintö, joka on omistanut elämänsä sukunsa
-            perinteen jatkamiselle.{' '}
+            MATTI SUNINEN OY on vuonna 2000 perustettu jalometallialan yritys
+            joka suunnittelee ja valmistaa kaikki korut suomessa, tuotemerkkeinä
+            SAIMAA KORUT , KOLI KORUT, MSOY SPEKTROLIITTI ,  ja SAIMAA LIVING
+            sisustus tuotteet. näistä linkeistä ( koli korut )  ( msoy
+            spektroliitti ) ( saimaa living ) voit tutustua tuotteisiin.  korut
+            valmistetaan 100 % kierrätys 925 hopeasta käsityönä taipalsaarella
+            suuren jänkäsalon saaressa . 
           </p>
-          <p>
+          {/* <p>
             Tämä pieteetillä valmistettujen korujen mestari ei ole vain
             taiteilija, vaan myös kunnioitettu kansalainen ja isänmaanystävä.
             Hänen teoksensa huokuvat rakkautta Suomea ja sen kulttuuria kohtaan.
-          </p>
+          </p> */}
         </div>
         <img src={about4} alt="" />
         <div className={styles.img_group}>
@@ -42,9 +44,9 @@ const BrandHistory = () => {
         </div>
         <div className={styles.series}>
           <div className={styles.link}>
-          <NavLink to="/korusarjat">
-            <button className={styles.button}>KORUSARJAT</button>
-          </NavLink>
+            <NavLink to="/korusarjat">
+              <button className={styles.button}>KORUSARJAT</button>
+            </NavLink>
           </div>
           <p className={styles.images_text}>
             Tervetuloa tutustumaan uuteen suomalaiseen käsityöläiseen ja hänen

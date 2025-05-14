@@ -32,7 +32,7 @@
 .text {
   max-width: 930px;
   color: rgb(63, 63, 63);
-  font-family: Roboto;
+  font-family: 'Montserrat';
   font-size: 30px;
   font-weight: 700;
   line-height: 120%;
@@ -56,7 +56,7 @@
   height: 82px;
   background-color: rgb(63, 63, 63);
   color: rgb(245, 245, 245);
-  font-family: Roboto;
+  font-family: 'Montserrat';
   font-size: 35px;
   font-weight: 400;
   line-height: 120%;
@@ -69,7 +69,7 @@
   max-width: 570px;
   align-self: flex-end;
   color: rgb(63, 63, 63);
-  font-family: Roboto;
+  font-family: 'Montserrat';
   font-size: 30px;
   font-weight: 400;
   line-height: 120%;

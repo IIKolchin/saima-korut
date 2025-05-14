@@ -5,6 +5,7 @@ import Logo from '../../assets/images/logo_header.svg';
 import { NavLink } from 'react-router-dom';
 import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useCart } from '../../context/CartContext';
 
 type THeaderProps = {
   mainPage?: boolean;
@@ -12,6 +13,9 @@ type THeaderProps = {
 
 const Header: FC<THeaderProps> = ({ mainPage }) => {
   const { t } = useTranslation();
+  const { cart } = useCart();
+  const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+
   return (
     <section className={styles.section}>
       {mainPage && <CustomSelectComponent />}
@@ -40,6 +44,7 @@ const Header: FC<THeaderProps> = ({ mainPage }) => {
         {t('Brändin historia')}
       </NavLink>
       <img className={styles.img} src={basket} alt="icon" />
+      {totalCount}
     </section>
   );
 };
