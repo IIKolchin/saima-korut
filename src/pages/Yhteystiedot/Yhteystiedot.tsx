@@ -18,10 +18,13 @@ const Yhteystiedot = () => {
           <p>Työmäenniementie 84, 54920 Taipalsaari. </p>
           <p>y-tunnus: 1581484-0</p>
         </div>
-        <WhatsAppButton
-          phoneNumber="358469425101"
-          message="haluan jäätelöä"
-        />
+        <div className={styles.whatsAppButton}>
+          <WhatsAppButton
+            phoneNumber="358469425101"
+            message="haluan jäätelöä"
+            text="Siirry WhatsAppiin"
+          />
+        </div>
         <div className={styles.collection_groups}>
           <div className={styles.collection_group}>
             <button className={styles.collection_button}>

@@ -9,12 +9,14 @@ type Props = {
 
 const ProductCard: FC<Props> = ({ item }) => {
   return (
-    <Link to={`/korusarjat/${item.id}`} className={styles.section}>
-      <img className={styles.img} src={item.images[0]} alt="jewerly." />
-      <p className={styles.text}>{item.description}</p>
-      <p className={styles.price}>{item.price}</p>
+    <section className={styles.section}>
+      <Link to={`/korusarjat/${item.id}`} className={styles.link}>
+        <img className={styles.img} src={item.images[0]} alt="jewerly." />
+        <p className={styles.text}>{item.description}</p>
+        <p className={styles.price}>{item.price}</p>
+      </Link>
       <button className={styles.button}>Lisää ostoskoriin</button>
-    </Link>
+    </section>
   );
 };
 

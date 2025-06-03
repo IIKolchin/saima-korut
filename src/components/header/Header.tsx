@@ -1,7 +1,7 @@
 import styles from './Header.module.css';
 import basket from '../../assets/images/basket.svg';
 import CustomSelectComponent from '../select/select';
-import Logo from '../../assets/images/logo_header.svg';
+import Logo from '../../assets/images/logo.svg';
 import { NavLink } from 'react-router-dom';
 import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -43,8 +43,12 @@ const Header: FC<THeaderProps> = ({ mainPage }) => {
       >
         {t('Brändin historia')}
       </NavLink>
-      <img className={styles.img} src={basket} alt="icon" />
-      {totalCount}
+      <NavLink to="/cart">
+        <div className={styles.cart}>
+          <img className={styles.img} src={basket} alt="icon" />
+          <p className={styles.count}>{totalCount}</p>
+        </div>
+      </NavLink>
     </section>
   );
 };

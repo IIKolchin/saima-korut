@@ -9,6 +9,7 @@ import BrandHistory from './pages/BrandHistory/BrandHistory';
 import Yhteystiedot from './pages/Yhteystiedot/Yhteystiedot';
 import Korusarjat from './pages/Korusarjat/Korusarjat';
 import JewelryDetailPage from './pages/JewerlyDetailPage/JewerlyDetailPage';
+import CartPage from './pages/CartPage/CartPage';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/yhteystiedot" element={<Yhteystiedot />} />
         <Route path="/korusarjat" element={<Korusarjat />} />
         <Route path="/korusarjat/:id" element={<JewelryDetailPage />} />
+        <Route path="/cart" element={<CartPage />} />
       </Routes>
     </>
   );

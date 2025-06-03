@@ -4,9 +4,13 @@
   flex-direction: column;
 }
 
+.link {
+  all: unset;
+}
+
 .img {
   width: 335px;
-  height: 336px;
+  height: 503px;
   margin-bottom: 10px;
 }
 
